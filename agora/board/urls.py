@@ -1,10 +1,10 @@
 from django.conf.urls import patterns, include, url
-from django.views.generic import TemplateView
-from board import views
+from views import *
 
-urlpatterns = patterns('board.views',
+urlpatterns = patterns('',
     # Examples:
     # url(r'^$', 'agora.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
-   	url('^$', TemplateView.as_view(template_name='index.html')),
+    url(r'^$', display_page),
+    url(r'^name-enter/$', get_name)
 )
