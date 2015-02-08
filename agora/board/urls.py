@@ -6,5 +6,5 @@ urlpatterns = patterns('board.views',
     # Examples:
     # url(r'^$', 'agora.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
-   	url('^$', TemplateView.as_view(template_name='index.html')),
+   	url('^$', views.index),
 )
