@@ -1,4 +1,5 @@
 from django.conf.urls import patterns, include, url
+<<<<<<< HEAD
 from django.views.generic import TemplateView
 from board import views
 
