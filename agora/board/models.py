@@ -4,7 +4,8 @@ from django.db import models
 class Post(models.Model):
 	tag = models.CharField(max_length=20)
 	text = models.CharField(max_length=300)
-	time = models.DateField(null=True)
+	title = models.CharField(max_length=40)
+	time = models.DateField(null=True, auto_now=True)
 	score = models.SmallIntegerField(null=True)
 	comments = models.ForeignKey('Post', null=True)
 

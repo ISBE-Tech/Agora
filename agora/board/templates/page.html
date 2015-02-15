@@ -1,14 +1,11 @@
 <form action="/name-enter/" method="post">
     {% csrf_token %}
-    {{ myform }}
+    {{ userform }}
     <input type="submit" value="Submit" />
 </form>
 
-{% for post in posts %}
-<h2>{{ post.text}}</h2>
-<p>{{ post.tag }}</p>
-{% endfor %}
-
-{% for user in users %}
-	{% include "usertemplate.html" %}
-{% endfor %}
+<form action"/create-post/" method="post">
+	{% csrf_token %}
+	{{ postform }}
+	<input type="submit" value="Submit" />
+</form>
