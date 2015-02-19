@@ -1,6 +1,6 @@
 from django.conf.urls import patterns, include, url
 from django.contrib import admin
-import board.urls
+import board
 
 urlpatterns = patterns('',
     # Examples:
